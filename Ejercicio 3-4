@@ -1,0 +1,39 @@
+/******************************************************************************
+Nicolas Ploza 1roB
+Guia de ejercicios
+Ejercicio 3-4: 
+Especializar la función anterior para que permita validar el entero ingresado en un rango determinado. 
+
+
+
+*******************************************************************************/
+#include <stdio.h>
+int NumeroEntero(int numero);
+
+int main()
+{
+    int numero;
+    
+    numero=NumeroEntero(numero);
+    
+    printf("\n%d",numero);
+
+    return 0;
+}
+
+int NumeroEntero(int numero)
+{
+    int numeroIngresado;
+    
+    printf("Ingrese un numero entero entre 0 y 10: ");
+    scanf("%d", &numeroIngresado);
+    while(numeroIngresado<1||numeroIngresado>10)
+    {
+        printf("Ingrese un numero entero entre 0 y 10: ");
+        scanf("%d", &numeroIngresado);
+    }
+    
+    return numeroIngresado;
+}
+
+
